@@ -9,8 +9,8 @@
   padding-top: 1px;
 }
 #calc {
-  height: 320px;
-  width: 450px;
+  height: 380px;
+  width: 520px;
   margin-left: 33%;
   margin-top: 100px;
   border-style: outset;
@@ -34,7 +34,7 @@
   padding-left: 15px;
 }
 #calc .textarea {
-  width: 223px;
+  width: 273px;
   height: 20px;
   margin-left: 13px;
   text-align: right;
@@ -49,23 +49,25 @@
   padding-bottom: 10px;
   padding-top: 10px;
   font-size: 1.45em;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 #history {
   position: absolute;
   display: flex;
-  height: 215px;
+  height: 263px;
   width: 200px;
   background-color: burlywood;
-  margin-left: 240px;
-  margin-top: 26px;
+  margin-left: 305px;
+  margin-top: -24.5px;
   overflow: auto;
   white-space: nowrap;
 }
 
 #tab {
   position: absolute;
-  padding-left: 250px;
+  padding-left: 300px;
   padding-top: 10px;
   font-weight: bolder;
   text-decoration: underline;

@@ -15,7 +15,11 @@
           Limite d'affichage <br />
           10 lignes
         </h4>
-        <h3>CALCULATRICE JS</h3>
+        <h3>
+          CALCULATRICE JS <br />
+          avec deux chiffres <br />
+          après la virgule
+        </h3>
         <div class="textarea" id="formul" placeholder="0"></div>
         <br />
         <div class="textarea" id="result" placeholder="0"></div>
@@ -24,6 +28,7 @@
         <div id="boutton">
           <table>
             <tr>
+              <td rowspan="4" class="button" onclick="button(15)">raz</td>
               <td class="button" onclick="button(7)">7</td>
               <td class="button" onclick="button(8)">8</td>
               <td class="button" onclick="button(9)">9</td>
@@ -43,7 +48,7 @@
             </tr>
             <tr>
               <td class="button" onclick="button(0)">0</td>
-              <td class="button" onclick="button(15)">raz</td>
+              <td class="button" onclick="button(16)">.</td>
               <td class="button" onclick="button(11)">=</td>
               <td class="button" onclick="button(10)">+</td>
             </tr>

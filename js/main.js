@@ -5,6 +5,7 @@ var i = 0;
 var z = [];
 var m = [];
 var n;
+var j;
 var k = 0;
 var l = 1;
 y[0] = "";
@@ -81,8 +82,9 @@ function button(x) {
     case 11:
       y[2] = z.join("");
       n = eval(y[0] + y[1] + y[2]);
-      document.getElementById("result").innerHTML = n;
-      m[k] = l + " : " + y[0] + y[1] + y[2] + " = " + n + "<br>";
+      j = Math.round(n * 100) / 100;
+      document.getElementById("result").innerHTML = j;
+      m[k] = l + " : " + y[0] + y[1] + y[2] + " = " + j + "<br>";
       k += 1;
       l += 1;
       switch (k) {
@@ -130,6 +132,12 @@ function button(x) {
       y[0] = "";
       y[1] = "";
       y[2] = "";
+      break;
+    case 16:
+      z[i] = ".";
+      i += 1;
+      document.getElementById("formul").innerHTML = y[0] + y[1] + z.join("");
+      document.getElementById("result").innerHTML = "";
       break;
     default:
       break;
