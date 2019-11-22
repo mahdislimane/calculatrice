@@ -143,5 +143,46 @@ function button(x) {
       break;
   }
 }
+var x1;
 
-document.getElementById("equal").addEventListener("click", function equal() {});
+function font(x1) {
+  function decor(a) {
+    var x = document.getElementsByClassName("text");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.textDecoration = a;
+    }
+  }
+  function italic(a) {
+    var x = document.getElementsByClassName("text");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.fontStyle = a;
+    }
+  }
+  function gras(a) {
+    var x = document.getElementsByClassName("text");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.fontWeight = a;
+    }
+  }
+  switch (x1) {
+    case 1:
+      gras("bolder");
+      break;
+    case 2:
+      italic("italic");
+      break;
+    case 3:
+      decor("underline");
+      break;
+    case 4:
+      decor("none");
+      italic("normal");
+      gras("normal");
+      break;
+    default:
+      break;
+  }
+}
