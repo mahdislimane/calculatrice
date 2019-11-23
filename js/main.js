@@ -144,7 +144,6 @@ function button(x) {
   }
 }
 var x1;
-
 function font(x1) {
   function decor(a) {
     var x = document.getElementsByClassName("text");
@@ -181,6 +180,72 @@ function font(x1) {
       decor("none");
       italic("normal");
       gras("normal");
+      break;
+    default:
+      break;
+  }
+}
+function tailles() {
+  document.getElementById("drdwn1").style.display = "block";
+}
+
+function ecritures() {
+  document.getElementById("drdwn2").style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches(".drdwn")) {
+    var dropdowns = document.getElementsByClassName("drdwn22");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if ((openDropdown.style.display = "block")) {
+        openDropdown.style.display = "none";
+      }
+    }
+  }
+};
+var x2;
+function taille(x2) {
+  function tail(a) {
+    var x = document.getElementsByClassName("text");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.fontSize = a;
+    }
+  }
+  switch (x2) {
+    case 1:
+      tail("smaller");
+      break;
+    case 2:
+      tail("medium");
+      break;
+    case 3:
+      tail("larger");
+      break;
+    default:
+      break;
+  }
+}
+var x3;
+function ecriture(x3) {
+  function ecr(a) {
+    var x = document.getElementsByClassName("text");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.fontFamily = a;
+    }
+  }
+  switch (x3) {
+    case 1:
+      ecr("Arial");
+      break;
+    case 2:
+      ecr("fantasy");
+      break;
+    case 3:
+      ecr("Times New Roman");
       break;
     default:
       break;

@@ -9,11 +9,26 @@
   </head>
   <body class="text">
     <div class="plan">
-      <div class="deco" class="text" onclick="font(1)">gras</div>
-      <div class="deco" class="text" onclick="font(2)">italique</div>
-      <div class="deco" class="text" onclick="font(3)">souligne</div>
-      <div class="deco" class="text" onclick="font(4)">rien</div>
-      <div id="color"></div>
+      <div class="deco" class="text" onclick="font(1)">Gras</div>
+      <div class="deco" class="text" onclick="font(2)">Italique</div>
+      <div class="deco" class="text" onclick="font(3)">Souligne</div>
+      <div class="deco" class="text" onclick="font(4)">Rien</div>
+      <div class="drdwn" onclick="tailles()">
+        Taille
+        <div id="drdwn1" class="drdwn22">
+          <h3 class="drdwn-c" onclick="taille(1)">1</h3>
+          <h3 class="drdwn-c" onclick="taille(2)">2</h3>
+          <h3 class="drdwn-c" onclick="taille(3)">3</h3>
+        </div>
+      </div>
+      <div class="drdwn" onclick="ecritures()">
+        Style
+        <div id="drdwn2" class="drdwn22">
+          <h3 class="drdwn-c" onclick="ecriture(1)">Arial</h3>
+          <h3 class="drdwn-c" onclick="ecriture(2)">fantasy</h3>
+          <h3 class="drdwn-c" onclick="ecriture(3)">Times New Roman</h3>
+        </div>
+      </div>
       <div id="calc">
         <h4 id="tab" class="text">
           Historique <br />

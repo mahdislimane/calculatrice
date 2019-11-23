@@ -12,20 +12,21 @@
   height: 380px;
   width: 520px;
   margin-left: 420px;
-  margin-top: -20px;
+  margin-top: -120px;
   border-style: outset;
   border-width: 2px;
   background-color: rgba(19, 60, 170, 0.801);
+  border-radius: 5px;
 }
 .button {
   height: 45px;
   width: 46px;
   font-size: 100%;
-
   background-color: rgb(204, 191, 3);
   border-style: outset;
   text-align: center;
   user-select: none;
+  border-radius: 5px;
 }
 .button:active {
   border-style: inset;
@@ -50,7 +51,6 @@
   padding-bottom: 10px;
   padding-top: 10px;
   font-size: 1.45em;
-
   user-select: none;
 }
 
@@ -64,13 +64,13 @@
   margin-top: -24.5px;
   overflow: auto;
   white-space: nowrap;
+  border-radius: 5px;
 }
 
 #tab {
   position: absolute;
   padding-left: 300px;
   padding-top: 10px;
-
   font-size: 1.5em;
   user-select: none;
 }
@@ -79,14 +79,54 @@
   flex-direction: column;
   height: 30px;
   width: 100px;
-
   background-color: blueviolet;
   border-style: outset;
-
   text-align: center;
   font-size: 1.2em;
+  user-select: none;
+  border-radius: 5px;
 }
 .deco:active {
   border-style: inset;
+}
+.drdwn,
+.drdwns {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  width: 100px;
+  background-color: blueviolet;
+  border-style: outset;
+  text-align: center;
+  font-size: 1.2em;
   user-select: none;
+  border-radius: 5px;
+}
+.drdwn:hover,
+.drdwn:focus,
+.drdwns:hover,
+.drdwns:focus {
+  border-style: inset;
+}
+.drdwn11,
+.drdwn22 {
+  margin-top: 30px;
+  display: none;
+  position: absolute;
+  background-color: #2647d8;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(7, 4, 58, 0.425);
+  z-index: 1;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+.drdwn-c:hover,
+.drdwn-c:hover {
+  background-color: #506be2;
+}
+#formul {
+  border-radius: 5px 5px 0 0;
+}
+#result {
+  border-radius: 0 0 5px 5px;
 }
