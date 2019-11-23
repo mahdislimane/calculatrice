@@ -143,6 +143,17 @@ function button(x) {
       break;
   }
 }
+
+window.addEventListener("keypress", function(e) {
+  var keycode = e.which || e.keyCode;
+  var valueEntered = String.fromCharCode(keycode);
+
+  z[i] = valueEntered;
+  i += 1;
+
+  document.getElementById("formul").innerHTML = y[0] + y[1] + z.join("");
+  document.getElementById("result").innerHTML = "";
+});
 var x1;
 function font(x1) {
   function decor(a) {
